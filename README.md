@@ -1,8 +1,6 @@
 # QX-mini51-SDCC
 
-Sample programs for the QX-mini51 with SDCC toolchain adapted from the ones here which used the Keil compiler:
-
-[QX-mini51 sample programs](https://github.com/kenyapcomau/QX-mini51)
+Sample programs for the QX-mini51 for SDCC toolchain adapted from the ones in the [QX-mini51 sample programs repo](https://github.com/kenyapcomau/QX-mini51) which used the Keil compiler:
 
 I have tried to replicate the functionality and stay close to the the Keil versions even if some code could be improved. Besides the syntax changes needed, e.g. interrupt 4 to __interrupt(4), obviously unidiomatic code has been improved, such as:
 
@@ -22,7 +20,7 @@ Note that late model 89C52s most likely need to use the 7.2 protocol so the stc1
 
 I have also provided code::blocks project files so that you can use that IDE.
 
-There are 4 jumpers on board which are opened to disable the buzzer, 8-LED bank, IR transmitter LED, and 7-segment LEDs, respectively. Some experiements will require disconnection of the jumper when the port pins are otherwise used.
+There are 4 jumpers on board which are opened to disable the buzzer, 8-LED bank, IR transmitter LED, and 7-segment LEDs, respectively. Some experiments will require disconnection of the jumper when the port pins are otherwise used.
 
 Some of the program require extra peripherals not included in the basic kit, so I have no way to verify that they work without getting the extra hardware. If you fix such a program feel free to submit a pull request.
 
